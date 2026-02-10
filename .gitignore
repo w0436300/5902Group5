@@ -18,3 +18,8 @@ pids/
 .DS_Store
 frontend/config.py
 data/vectorstore/chroma.sqlite3
+
+node_modules/
+dist/
+.env*
+!.env.example

@@ -5,16 +5,16 @@ import { useEffect } from "react";
 export default function Login() {
   const navigate = useNavigate();
 
-  // If already authed, jump straight to dashboard
+  // If already authed, jump straight to resume learning
   useEffect(() => {
     if (isDemoAuthed()) {
-      navigate("/dashboard", { replace: true });
+      navigate("/resume-learning", { replace: true });
     }
   }, [navigate]);
 
   function handleDemoLogin() {
     loginDemo();
-    navigate("/dashboard", { replace: true });
+    navigate("/resume-learning", { replace: true });
   }
 
   return (

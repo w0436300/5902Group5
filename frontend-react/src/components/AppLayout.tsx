@@ -2,6 +2,7 @@ import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { logoutDemo } from "../auth";
 
 const navLinks = [
+  { to: "/resume-learning", label: "Resume Learning" },
   { to: "/dashboard", label: "Dashboard" },
   { to: "/data-example", label: "Data Example" },
 ];
